@@ -254,3 +254,6 @@ g = Digraph('unix', filename='concept-map2',node_attr={'color': 'lightblue2', 's
 for i in range(len(R)-1):
   g.edge(R[i],R[i+1])
   g.view()
+
+from google.colab import files
+files.download("concept-map2.pdf")
